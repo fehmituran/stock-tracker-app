@@ -103,9 +103,7 @@ declare global {
     };
 
     type StockDetailsPageProps = {
-        params: Promise<{
-            symbol: string;
-        }>;
+        params: { symbol: string } | Promise<{ symbol: string }>;
     };
 
     type WatchlistButtonProps = {
