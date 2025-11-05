@@ -1,4 +1,10 @@
 declare global {
+    type UserForNewsEmail = {
+        email: string;
+        name: string;
+        watchlistSymbols?: string[];
+    };
+
     type SignInFormData = {
         email: string;
         password: string;
